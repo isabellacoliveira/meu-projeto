@@ -1,0 +1,15 @@
+.custom-navbar {
+    /* background-color: #FF6200; */
+    background-color: #000D3C;
+}
+
+.botoes {
+    background-color: #ffffff!important;
+    color: #000000!important;
+    margin: 3px 3px 3px 3px;
+    border-radius: 10px;
+}
+
+.botoes:hover{
+    transform: translateY(-5px);
+}

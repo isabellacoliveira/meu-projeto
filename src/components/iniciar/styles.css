@@ -1,0 +1,147 @@
+.me{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border: 5px solid #fff;
+    margin-right: 30px;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .me {
+    animation: pulse 3s infinite;
+  }
+  
+
+.fundo{
+    background-color: #000D3C;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+  }
+  
+  .typing-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 50px;
+    border-right: 2px solid black; /* Cursor effect */
+    animation: typing 4s steps(40, end) infinite, blink 0.75s step-end infinite;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for better effect */
+  }
+
+  .cargo{
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    color: black;
+    padding: 8px 8px 8px 8px;
+  }
+
+  .skills{
+    width: 50px;
+    height: 50px;
+  }
+
+  .container_skills{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .promo{
+    background-color: #FF6200;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .arrow {
+    margin-left: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+  .up {
+      transform: rotate(-135deg); 
+  }
+
+  .down {
+      transform: rotate(45deg); 
+  }
+
+  .entregas{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+
+  .selected {
+    background-color: orange;
+    border-color: orange;
+    color: white;
+  }
+
+  .contribuicoes{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px 20px 20px;
+  }
+
+
+  .container_tabela{
+    margin: 10px 10px 10px 10px;
+  }
+
+  .table-responsive-sm{
+    margin: 20px 20px 20px 20px!important;
+  }
+
+  .titulo{
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+  }
+
+  .aceleracao{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .action-selected{
+    background-color: #000D3C!important;
+  }
+
+  
