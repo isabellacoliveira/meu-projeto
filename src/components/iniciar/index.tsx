@@ -15,9 +15,10 @@ export default function Iniciar() {
     const [promocao, setPromocao] = useState<string>('JR');
     const [selectedButton, setSelectedButton] = useState<number | null>(0);
     const [isOpen, setIsOpen] = useState(false);
+    const [openned, setOpenned] = useState<number | null>(null);
 
-    const toggleTable = () => {
-        setIsOpen(!isOpen);
+    const toggleTable = (index: number) => {
+        setOpenned(index);
     };
 
     const handleClick = (index: number) => {
@@ -87,11 +88,11 @@ export default function Iniciar() {
                         <div>
                             {selectedButton === 0 ?
                                 <>
-                                    <p onClick={toggleTable} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
+                                    <p onClick={() => toggleTable(0)} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
                                         Minhas entregas
                                         <span className={`arrow ${isOpen ? 'down' : 'up'}`}></span>
                                     </p>
-                                    {isOpen && (
+                                    {isOpen && openned === 0 && (
                                         <div className='container_tabela'>
                                             <Table responsive="sm" className='table'>
                                                 <thead>
@@ -224,46 +225,158 @@ export default function Iniciar() {
                                 : ""}
 
                             {selectedButton === 2 ?
-                                    <>
+                                <>
                                     <div className='contribuicoes'>
+                                        <p onClick={() => toggleTable(1)} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
+                                            Contribuições dentro da RT
+                                            <span className={`arrow ${openned ? 'down' : 'up'}`}></span>
+                                        </p>
+                                        {openned === 1 && (
+                                            <>
+                                                <div className='tarefas'>
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+                                                        <Card.Body>
+                                                            <Card.Title>Organização do Soluções em Foco</Card.Title>
+                                                            <Card.Text>
+                                                                Organização da reunião "Soluções em Foco", reunião focada em passagens de conhecimento e discussões de soluções que podem ser adotadas para nossa RT.
 
-                                        <Card style={{ width: '18rem', marginRight: '20px' }}>
-                                            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                                            <Card.Body>
-                                                <Card.Title>Organização do Soluções em Foco</Card.Title>
-                                                <Card.Text>
-                                                    Organização da reunião "Soluções em Foco", reunião focada em passagens de conhecimento e discussões de soluções que podem ser adotadas para nossa RT. 
+                                                            </Card.Text>
+                                                            <Button variant="primary">Sextas-Feiras: 15h</Button>
+                                                        </Card.Body>
+                                                    </Card>
 
-                                                </Card.Text>
-                                                <Button variant="primary">Sextas-Feiras: 15h</Button>
-                                            </Card.Body>
-                                        </Card>
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Estabilização do Ambiente de Dev - Tapete Laranja</Card.Title>
+                                                            <Card.Text>
+                                                                Discovery e estabilização do ambiente de desenvolvimento do fluxo do tapete laranja. Saindo da margem de 100% de erros para um cenário de 70% das rotas funcionando.
 
-                                        <Card style={{ width: '18rem', marginRight: '20px'  }}>
-                                            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                                            <Card.Body>
-                                                <Card.Title>Estabilização do Ambiente de Dev - Tapete Laranja</Card.Title>
-                                                <Card.Text>
-                                                    Discovery e estabilização do ambiente de desenvolvimento do fluxo do tapete laranja. Saindo da margem de 100% de erros para um cenário de 70% das rotas funcionando.
+                                                            </Card.Text>
+                                                            <Button variant="primary">Discovery/Estabilização</Button>
+                                                        </Card.Body>
+                                                    </Card>
 
-                                                </Card.Text>
-                                                <Button variant="primary">Discovery/Estabilização</Button>
-                                            </Card.Body>
-                                        </Card>
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Alimentação do Sharepoint da RT com documentações explicativas</Card.Title>
+                                                            <Card.Text>
+                                                                Alimentação do Sharepoint da RT com documentações explicativas para Onboarding e auxilio aos colaboradores.
 
-                                        <Card style={{ width: '18rem', marginRight: '20px'  }}>
-                                            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                                            <Card.Body>
-                                                <Card.Title>Alimentação do Sharepoint da RT com documentações explicativas</Card.Title>
-                                                <Card.Text>
-                                                Alimentação do Sharepoint da RT com documentações explicativas para Onboarding e auxilio aos colaboradores.
+                                                            </Card.Text>
+                                                            <Button variant="primary">Discovery/Estabilização</Button>
+                                                        </Card.Body>
+                                                    </Card>
 
-                                                </Card.Text>
-                                                <Button variant="primary">Discovery/Estabilização</Button>
-                                            </Card.Body>
-                                        </Card>
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Aulas de Front-end</Card.Title>
+                                                            <Card.Text>
+                                                                Junto com outro colaborador, fomos responsáveis por puxar aulas sobre front-end para ensinar os outros colaboradores.
+                                                                Ensinando tecnologias que utilizamos em nossa RT.
+                                                            </Card.Text>
+                                                            <Button variant="primary">Aulas sobre Angular</Button>
+                                                        </Card.Body>
+                                                    </Card>
+
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Café com Git</Card.Title>
+                                                            <Card.Text>
+                                                                Passagem de conhecimento sobre Git para a Squad Aceleração. 
+                                                                Apresentação com slides explicativos
+                                                            </Card.Text>
+                                                            <Button variant="primary">Passagem de Conhecimento</Button>
+                                                        </Card.Body>
+                                                    </Card>
+
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Apresentação da R2</Card.Title>
+                                                            <Card.Text>
+                                                                Apresentação das principais entregas da Release 2 feitas pela Squad Aceleração. 
+                                                            </Card.Text>
+                                                            <Button variant="primary">Apresentação</Button>
+                                                        </Card.Body>
+                                                    </Card>
+
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Apresentação da R3</Card.Title>
+                                                            <Card.Text>
+                                                                Apresentação das principais entregas que seriam feitas na Release 3 pela Squad Aceleração. 
+                                                            </Card.Text>
+                                                            <Button variant="primary">Apresentação</Button>
+                                                        </Card.Body>
+                                                    </Card>
+
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Passagem de conhecimento Cloudfront + Akamai</Card.Title>
+                                                            <Card.Text>
+                                                                Apresentação explicando a diferença entre Cloudfront e Akamai no "Soluções em Foco" para a RT toda. 
+                                                            </Card.Text>
+                                                            <Button variant="primary">Apresentação</Button>
+                                                        </Card.Body>
+                                                    </Card>
+
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Apresentação do PDCA - Ambiente Dev</Card.Title>
+                                                            <Card.Text>
+                                                                Apresentação feita no PDCA sobre o levantamento do ambiente de dev, levantando os principais progressos e resultados. 
+                                                            </Card.Text>
+                                                            <Button variant="primary">Apresentação</Button>
+                                                        </Card.Body>
+                                                    </Card>
+                                                </div>
+                                            </>
+                                        )}
+
+                                        <p onClick={() => toggleTable(2)} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
+                                            Contribuições fora da RT
+                                            <span className={`arrow ${openned ? 'down' : 'up'}`}></span>
+                                        </p>
+                                        {openned === 2 && (
+                                            <>
+                                                <div className='tarefas'>
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Desenvolvimento do "Calcula Interjornada"</Card.Title>
+                                                            <Card.Text>
+                                                                Desenvolvimento do aplicativo "Calcula Interjornada" que fornece funcionalidades para que os Itubers consigam fazer a gestão de suas horas do banco de horas.
+                                                            </Card.Text>
+                                                            <Button variant="primary">
+                                                                <a href="https://calcula-interjornada-itau.vercel.app/" target='blank'>Acesse o app</a>
+                                                            </Button>
+                                                        </Card.Body>
+                                                    </Card>
+
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Passagem de conhecimento AWS</Card.Title>
+                                                            <Card.Text>
+                                                                Passagem de conhecimento sobre AWS para colaboradores de outras RTs.
+                                                            </Card.Text>
+                                                            <Button variant="primary">AWS</Button>
+                                                        </Card.Body>
+                                                    </Card>
+
+                                                    <Card style={{ width: '18rem', marginRight: '20px' }}>
+                                                        <Card.Body>
+                                                            <Card.Title>Passagem de conhecimento Git</Card.Title>
+                                                            <Card.Text>
+                                                                Passagem de conhecimento sobre Git para um cientista de dados de Shared Experience PJ. 
+                                                            </Card.Text>
+                                                            <Button variant="primary">Git</Button>
+                                                        </Card.Body>
+                                                    </Card>
+                                                </div>
+                                            </>
+                                        )}
+
                                     </div>
-                                    </> : ""}
+                                </> : ""}
                         </div>
 
                     </div>
