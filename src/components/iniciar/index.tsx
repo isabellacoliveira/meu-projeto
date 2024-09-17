@@ -15,10 +15,20 @@ export default function Iniciar() {
     const [promocao, setPromocao] = useState<string>('JR');
     const [selectedButton, setSelectedButton] = useState<number | null>(0);
     const [isOpen, setIsOpen] = useState(false);
-    const [openned, setOpenned] = useState<number | null>(null);
+    const [openned, setOpenned] = useState(false);
+    const [dentroDaRT, setDentroDaRT] = useState(false);
+    const [foraDaRT, setForaDaRT] = useState(false);
 
-    const toggleTable = (index: number) => {
-        setOpenned(index);
+    const toggleTable = () => {
+        setOpenned(!isOpen);
+    };
+
+    const openDentroDaRT = () => {
+        setDentroDaRT(!dentroDaRT);
+    };
+    
+    const openForaDaRT = () => {
+        setForaDaRT(!foraDaRT);
     };
 
     const handleClick = (index: number) => {
@@ -88,11 +98,11 @@ export default function Iniciar() {
                         <div>
                             {selectedButton === 0 ?
                                 <>
-                                    <p onClick={() => toggleTable(0)} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
+                                    <p onClick={() => toggleTable()} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
                                         Minhas entregas
                                         <span className={`arrow ${isOpen ? 'down' : 'up'}`}></span>
                                     </p>
-                                    {isOpen && openned === 0 && (
+                                    {openned && (
                                         <div className='container_tabela'>
                                             <Table responsive="sm" className='table'>
                                                 <thead>
@@ -227,11 +237,11 @@ export default function Iniciar() {
                             {selectedButton === 2 ?
                                 <>
                                     <div className='contribuicoes'>
-                                        <p onClick={() => toggleTable(1)} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
+                                        <p onClick={() => openDentroDaRT()} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
                                             Contribuições dentro da RT
                                             <span className={`arrow ${openned ? 'down' : 'up'}`}></span>
                                         </p>
-                                        {openned === 1 && (
+                                        {dentroDaRT && (
                                             <>
                                                 <div className='tarefas'>
                                                     <Card style={{ width: '18rem', marginRight: '20px' }}>
@@ -283,7 +293,7 @@ export default function Iniciar() {
                                                         <Card.Body>
                                                             <Card.Title>Café com Git</Card.Title>
                                                             <Card.Text>
-                                                                Passagem de conhecimento sobre Git para a Squad Aceleração. 
+                                                                Passagem de conhecimento sobre Git para a Squad Aceleração.
                                                                 Apresentação com slides explicativos
                                                             </Card.Text>
                                                             <Button variant="primary">Passagem de Conhecimento</Button>
@@ -294,7 +304,7 @@ export default function Iniciar() {
                                                         <Card.Body>
                                                             <Card.Title>Apresentação da R2</Card.Title>
                                                             <Card.Text>
-                                                                Apresentação das principais entregas da Release 2 feitas pela Squad Aceleração. 
+                                                                Apresentação das principais entregas da Release 2 feitas pela Squad Aceleração.
                                                             </Card.Text>
                                                             <Button variant="primary">Apresentação</Button>
                                                         </Card.Body>
@@ -304,7 +314,7 @@ export default function Iniciar() {
                                                         <Card.Body>
                                                             <Card.Title>Apresentação da R3</Card.Title>
                                                             <Card.Text>
-                                                                Apresentação das principais entregas que seriam feitas na Release 3 pela Squad Aceleração. 
+                                                                Apresentação das principais entregas que seriam feitas na Release 3 pela Squad Aceleração.
                                                             </Card.Text>
                                                             <Button variant="primary">Apresentação</Button>
                                                         </Card.Body>
@@ -314,7 +324,7 @@ export default function Iniciar() {
                                                         <Card.Body>
                                                             <Card.Title>Passagem de conhecimento Cloudfront + Akamai</Card.Title>
                                                             <Card.Text>
-                                                                Apresentação explicando a diferença entre Cloudfront e Akamai no "Soluções em Foco" para a RT toda. 
+                                                                Apresentação explicando a diferença entre Cloudfront e Akamai no "Soluções em Foco" para a RT toda.
                                                             </Card.Text>
                                                             <Button variant="primary">Apresentação</Button>
                                                         </Card.Body>
@@ -324,7 +334,7 @@ export default function Iniciar() {
                                                         <Card.Body>
                                                             <Card.Title>Apresentação do PDCA - Ambiente Dev</Card.Title>
                                                             <Card.Text>
-                                                                Apresentação feita no PDCA sobre o levantamento do ambiente de dev, levantando os principais progressos e resultados. 
+                                                                Apresentação feita no PDCA sobre o levantamento do ambiente de dev, levantando os principais progressos e resultados.
                                                             </Card.Text>
                                                             <Button variant="primary">Apresentação</Button>
                                                         </Card.Body>
@@ -333,11 +343,11 @@ export default function Iniciar() {
                                             </>
                                         )}
 
-                                        <p onClick={() => toggleTable(2)} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
+                                        <p onClick={() => openForaDaRT()} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} className='entregas'>
                                             Contribuições fora da RT
                                             <span className={`arrow ${openned ? 'down' : 'up'}`}></span>
                                         </p>
-                                        {openned === 2 && (
+                                        {foraDaRT && (
                                             <>
                                                 <div className='tarefas'>
                                                     <Card style={{ width: '18rem', marginRight: '20px' }}>
@@ -366,7 +376,7 @@ export default function Iniciar() {
                                                         <Card.Body>
                                                             <Card.Title>Passagem de conhecimento Git</Card.Title>
                                                             <Card.Text>
-                                                                Passagem de conhecimento sobre Git para um cientista de dados de Shared Experience PJ. 
+                                                                Passagem de conhecimento sobre Git para um cientista de dados de Shared Experience PJ.
                                                             </Card.Text>
                                                             <Button variant="primary">Git</Button>
                                                         </Card.Body>
