@@ -9,6 +9,15 @@ import Gtw from '../../assets/images.jpg'
 import Image from '../../assets/images.png'
 import React from '../../assets/react.png'
 import Spring from '../../assets/spring.png'
+import cartaoProtegido from '../../assets/entregas/cartao.webp'
+import vitrine from '../../assets/entregas/parcelamento-carrossel-jpg.webp'
+import recaptcha from '../../assets/entregas/recaptcha.webp'
+import uniclassMion from '../../assets/entregas/Consorcio-Itau-Uniclass.avif'
+import acessibilidade from '../../assets/entregas/diversidade_inclusao2.png'
+import homeIp from '../../assets/entregas/Personnalite-Cover.webp'
+import cloudfront from '../../assets/entregas/amazon-cloud-front.webp'
+import undefined from '../../assets/entregas/images.jpg'
+import uni from '../../assets/entregas/uni.png'
 import { Button, ButtonGroup, Card, Table } from 'react-bootstrap';
 
 export default function Iniciar() {
@@ -26,7 +35,7 @@ export default function Iniciar() {
     const openDentroDaRT = () => {
         setDentroDaRT(!dentroDaRT);
     };
-    
+
     const openForaDaRT = () => {
         setForaDaRT(!foraDaRT);
     };
@@ -104,133 +113,181 @@ export default function Iniciar() {
                                     </p>
                                     {openned && (
                                         <div className='container_tabela'>
-                                            <Table responsive="sm" className='table'>
-                                                <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Entrega</th>
-                                                        <th>Tempo de Execução</th>
-                                                        <th>Impacto ao Cliente</th>
-                                                        <th>Tipo</th>
-                                                        <th>Número da Tarefa</th>
-                                                        <th>BCP</th>
-                                                        <th>Quantidade de BCP</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Adicionar Seguro Cartão Protegido no meio do fluxo </td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Discovery - Levantamento do Ambiente de Dev via DNS</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Equalização da experiência de botões de seleção</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>Tageamento da vitrine para o portal GA4</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Correção de inconsistências de acessibilidade na jornada</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>6</td>
-                                                        <td>Atualização da identidade visual do banco na jornada de abertura de contas</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>7</td>
-                                                        <td>Envelopamento da Home Personnalite - Home IP</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>8</td>
-                                                        <td>Envelopamento da Home Uniclass - Home IU</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9</td>
-                                                        <td>Bug - Nome do correntista "undefined" </td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>10</td>
-                                                        <td>Correção de inconsistências de acessibilidade na tela de Home-IP</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Front-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>11</td>
-                                                        <td>Remoção do Recaptcha no fluxo do Folhas</td>
-                                                        <td>X dias</td>
-                                                        <td> - </td>
-                                                        <td>Back-End</td>
-                                                        <td>HIS-0123-123</td>
-                                                        <td>Sim</td>
-                                                        <td>Tanto</td>
-                                                    </tr>
-                                                </tbody>
-                                            </Table>
-                                        </div>)}
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={cartaoProtegido} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Adição do Seguro Cartão Protegido no meio do fluxo do Tapete Laranja</Card.Title>
+                                                    <Card.Text>
+                                                        Adição da oferta do seguro cartão protegido no meio do fluxo do tapete laranja. <br />
+                                                        Front-End
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={vitrine} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Tageamento da vitrine para o portal GA4</Card.Title>
+                                                    <Card.Text>
+                                                        Adição do tageamento da tela de vitrine para análise no portal GA4.<br />
+                                                        Front-End
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={cloudfront} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Discovery - Levantamento do Ambiente de Dev via DNS</Card.Title>
+                                                    <Card.Text>
+                                                        Levantamento do ambiente de dev do tapete laranja via DNS.<br />
+                                                        Front-End/Infra
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={cartaoProtegido} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Equalização da experiência de botões de seleção</Card.Title>
+                                                    <Card.Text>
+                                                        {/* Levantamento do ambiente de dev do tapete laranja via DNS.
+                                                        Front-End/Infra */}
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={acessibilidade} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Correção de inconsistências de acessibilidade na jornada</Card.Title>
+                                                    <Card.Text>
+                                                        {/* Levantamento do ambiente de dev do tapete laranja via DNS
+                                                        Front-End/Infra */}
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={uni} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Atualização da identidade visual do banco na jornada de abertura de contas</Card.Title>
+                                                    <Card.Text>
+                                                        {/* Levantamento do ambiente de dev do tapete laranja via DNS
+                                                        Front-End/Infra */}
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={homeIp} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Envelopamento da Home Personnalite - Home IP</Card.Title>
+                                                    <Card.Text>
+                                                        {/* Levantamento do ambiente de dev do tapete laranja via DNS
+                                                        Front-End/Infra */}
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={uniclassMion} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Envelopamento da Home Uniclass - Home IU</Card.Title>
+                                                    <Card.Text>
+                                                        {/* Levantamento do ambiente de dev do tapete laranja via DNS
+                                                        Front-End/Infra */}
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={undefined} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Bug - Nome do correntista "undefined"</Card.Title>
+                                                    <Card.Text>
+                                                        {/* Levantamento do ambiente de dev do tapete laranja via DNS
+                                                        Front-End/Infra */}
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={acessibilidade} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Correção de inconsistências de acessibilidade na tela de Home-IP</Card.Title>
+                                                    <Card.Text>
+                                                        {/* Levantamento do ambiente de dev do tapete laranja via DNS
+                                                        Front-End/Infra */}
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px'}} src={recaptcha} />
+                                                <Card.Body>
+                                                    <Card.Title style={{ display: 'flex', flexDirection: 'column'}}>Remoção do Recaptcha no fluxo do Folhas</Card.Title>
+                                                    <Card.Text>
+                                                        {/* Levantamento do ambiente de dev do tapete laranja via DNS
+                                                        Front-End/Infra */}
+                                                    </Card.Text>
+                                                    <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                    {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</Button> */}
+                                                </Card.Body>
+                                            </Card>
+                                        </div>
+                                    )}
                                 </>
                                 : ""}
 
