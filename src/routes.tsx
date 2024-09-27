@@ -10,11 +10,11 @@ function AppRoutes() {
                 <Routes>
                     <Route path="/" element={<Inicio />} >
                         <Route path="/entregas" element={<Iniciar />} />
-                        <Route path="/valores" element={<Entregas />} />
-                        <Route path="/soft-skills" element={<Entregas />} />
-                        <Route path="/feedbacks" element={<Entregas />} />
-                        <Route path="/trajetoria" element={<Entregas />} />
-                        <Route path="/relacionamentos" element={<Entregas />} />
+                        {/* <Route path="/valores" element={<Entregas />} /> */}
+                        {/* <Route path="/soft-skills" element={<Entregas />} /> */}
+                        {/* <Route path="/feedbacks" element={<Entregas />} /> */}
+                        {/* <Route path="/trajetoria" element={<Entregas />} /> */}
+                        {/* <Route path="/relacionamentos" element={<Entregas />} /> */}
                     </Route>
                     <Route path="/*" element={<Inicio />} />
                 </Routes>
