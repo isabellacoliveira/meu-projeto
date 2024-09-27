@@ -31,6 +31,7 @@ import releases from '../../assets/releases.jpg'
 import reuniao from '../../assets/reuniao.jpg'
 import tapete from '../../assets/tapete.jpg'
 import { Button, ButtonGroup, Card, Table } from 'react-bootstrap';
+import MyLineChart from '../rechart';
 
 export default function Iniciar() {
     const [promocao, setPromocao] = useState<string>('JR');
@@ -112,6 +113,13 @@ export default function Iniciar() {
                                     onClick={() => handleClick(2)}
                                 >
                                     Fora da Squad/RT
+                                </Button>
+                                <Button
+                                    variant={'secondary'}
+                                    className={selectedButton === 3 ? 'action-selected' : 'action'}
+                                    onClick={() => handleClick(3)}
+                                >
+                                    Entregas de BCPs
                                 </Button>
                             </ButtonGroup>
                         </div>
@@ -492,6 +500,10 @@ export default function Iniciar() {
                                             </Card>
                                         </div>
                                     </div>
+                                </> : ""}
+
+                                {selectedButton === 3 ? <>
+                                <MyLineChart />
                                 </> : ""}
                         </div>
 
