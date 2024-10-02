@@ -138,7 +138,7 @@ export default function Iniciar() {
                                                 <Card.Text>
                                                     Adição da oferta do seguro cartão protegido no meio do fluxo do tapete laranja. <br />
                                                 </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 75</button>
                                             </Card.Body>
                                         </Card>
 
@@ -152,7 +152,7 @@ export default function Iniciar() {
                                                 <Card.Text>
                                                     Adição do tageamento da tela de vitrine para análise no portal GA4.<br />
                                                 </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 63</button>
                                                 {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
                                             </Card.Body>
                                         </Card>
@@ -183,7 +183,7 @@ export default function Iniciar() {
                                                 <Card.Text>
                                                     Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500
                                                 </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 12</button>
                                                 {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
                                             </Card.Body>
                                         </Card>
@@ -213,7 +213,7 @@ export default function Iniciar() {
                                                 <Card.Text>
                                                     Troca da identidade visual do banco nas telas de Uniclass.
                                                 </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 14</button>
                                                 {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
                                             </Card.Body>
                                         </Card>
@@ -228,7 +228,7 @@ export default function Iniciar() {
                                                 <Card.Text>
                                                     Criação do visual da tela de home do segmento Personnalité.
                                                 </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 11</button>
                                                 {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
                                             </Card.Body>
                                         </Card>
@@ -243,7 +243,7 @@ export default function Iniciar() {
                                                 <Card.Text>
                                                     Atualização do visual da tela de home do segmento Uniclass.
                                                 </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 24</button>
                                             </Card.Body>
                                         </Card>
 
@@ -257,7 +257,7 @@ export default function Iniciar() {
                                                 <Card.Text>
                                                     Correção do bug causado pelo CMS Headless no fluxo de Wayout do tapete laranja.
                                                 </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 42</button>
                                                 {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
                                             </Card.Body>
                                         </Card>
@@ -287,7 +287,7 @@ export default function Iniciar() {
                                                 <Card.Text>
                                                     Remoção do recaptcha no fluxo de folhas do tapete laranja.
                                                 </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 86</button>
                                                 {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</Button> */}
                                             </Card.Body>
                                         </Card>
@@ -307,7 +307,7 @@ export default function Iniciar() {
                                             <Card.Text>
                                                 Integração do front-end com o back-end utilizando a estrutura do Caronte
                                             </Card.Text>
-                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 127</button>
                                         </Card.Body>
                                     </Card>
 
@@ -321,7 +321,7 @@ export default function Iniciar() {
                                             <Card.Text>
                                                 Integração do Google Maps para busca de agência do usuário logado.
                                             </Card.Text>
-                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 74</button>
                                             {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
                                         </Card.Body>
                                     </Card>
@@ -336,7 +336,7 @@ export default function Iniciar() {
                                             <Card.Text>
                                                 Integração do Caronte no MFE Autenticação
                                             </Card.Text>
-                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
+                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 101</button>
                                             {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
                                         </Card.Body>
                                     </Card>
