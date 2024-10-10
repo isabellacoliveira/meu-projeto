@@ -23,7 +23,7 @@ function Inicio() {
               {/* <Nav.Link onClick={() => navigate('valores')} className='botoes'>Valores do Banco</Nav.Link> */}
               {/* <Nav.Link onClick={() => navigate('soft-skills')} className='botoes'>Soft Skills</Nav.Link>  */}
               {/* <Nav.Link onClick={() => navigate('feedbacks')} className='botoes'>Feedbacks</Nav.Link> */}
-              <Nav.Link onClick={() => navigate('trajetoria')} className='botoes'>Trajetória Profissional</Nav.Link>
+              {/* <Nav.Link onClick={() => navigate('trajetoria')} className='botoes'>Trajetória Profissional</Nav.Link> */}
               {/* <Nav.Link onClick={() => navigate('relacionamentos')} className='botoes'>Relacionamentos Pessoais</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
