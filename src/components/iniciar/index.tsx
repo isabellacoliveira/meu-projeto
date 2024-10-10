@@ -129,31 +129,49 @@ export default function Iniciar() {
                                 <>
                                     <div className='container_tabela'>
                                         <Card style={{
-                                            width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                            width: '18rem',
+                                            marginRight: '20px',
+                                            flexBasis: 'calc(100% / 5)',
                                             border: '0.5px solid black'
                                         }}>
-                                            <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={cartaoProtegido} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Adição do Seguro Cartão Protegido no meio do fluxo do Tapete Laranja</Card.Title>
-                                                <Card.Text>
-                                                    Adição da oferta do seguro cartão protegido no meio do fluxo do tapete laranja. <br />
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 75</button>
+                                            <Card.Img
+                                                variant="top"
+                                                style={{ width: '100%', height: '200px' }}
+                                                src={cartaoProtegido}
+                                            />
+                                            <Card.Body style={{
+                                                display: 'flex',
+                                                flexDirection: 'column',
+                                                justifyContent: 'space-between'
+                                            }}>
+                                                <div>
+                                                    <Card.Title>
+                                                        Adição do Seguro Cartão Protegido no meio do fluxo do Tapete Laranja
+                                                    </Card.Title>
+                                                    <Card.Text>
+                                                        Adição da oferta do seguro cartão protegido no meio do fluxo do tapete laranja.
+                                                    </Card.Text>
+                                                </div>
+                                                <button className='promo' style={{ marginTop: 'auto' }}>
+                                                    BCPs entregues: 75
+                                                </button>
                                             </Card.Body>
                                         </Card>
+
 
                                         <Card style={{
                                             width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={vitrine} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Tageamento da vitrine para o portal GA4</Card.Title>
-                                                <Card.Text>
-                                                    Adição do tageamento da tela de vitrine para análise no portal GA4.<br />
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 63</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Tageamento da vitrine para o portal GA4</Card.Title>
+                                                    <Card.Text>
+                                                        Adição do tageamento da tela de vitrine para análise no portal GA4.
+                                                    </Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues: 63</button>
                                             </Card.Body>
                                         </Card>
 
@@ -162,14 +180,12 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={cloudfront} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Discovery - Levantamento do Ambiente de Dev via DNS</Card.Title>
-                                                <Card.Text>
-                                                    Levantamento do ambiente de dev do tapete laranja via DNS.<br />
-
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Discovery - Levantamento do Ambiente de Dev via DNS</Card.Title>
+                                                    <Card.Text>Levantamento do ambiente de dev do tapete laranja via DNS.</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues:</button>
                                             </Card.Body>
                                         </Card>
 
@@ -178,13 +194,14 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={cartaoProtegido} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Equalização da experiência de botões de seleção</Card.Title>
-                                                <Card.Text>
-                                                    Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 12</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Equalização da experiência de botões de seleção</Card.Title>
+                                                    <Card.Text>
+                                                        Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500.
+                                                    </Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues: 12</button>
                                             </Card.Body>
                                         </Card>
 
@@ -193,13 +210,12 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={acessibilidade} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Correção de inconsistências de acessibilidade na jornada</Card.Title>
-                                                <Card.Text>
-                                                    Correção de bugs de acessibilidade espalhados pelo fluxo do tapete laranja.
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Correção de inconsistências de acessibilidade na jornada</Card.Title>
+                                                    <Card.Text>Correção de bugs de acessibilidade espalhados pelo fluxo do tapete laranja.</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues:</button>
                                             </Card.Body>
                                         </Card>
 
@@ -208,13 +224,12 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={uni} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Atualização da identidade visual do banco na jornada de abertura de contas</Card.Title>
-                                                <Card.Text>
-                                                    Troca da identidade visual do banco nas telas de Uniclass.
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 14</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Atualização da identidade visual do banco na jornada de abertura de contas</Card.Title>
+                                                    <Card.Text>Troca da identidade visual do banco nas telas de Uniclass.</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues: 14</button>
                                             </Card.Body>
                                         </Card>
 
@@ -223,13 +238,12 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={homeIp} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Envelopamento da Home Personnalite - Home IP</Card.Title>
-                                                <Card.Text>
-                                                    Criação do visual da tela de home do segmento Personnalité.
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 11</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Envelopamento da Home Personnalite - Home IP</Card.Title>
+                                                    <Card.Text>Criação do visual da tela de home do segmento Personnalité.</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues: 11</button>
                                             </Card.Body>
                                         </Card>
 
@@ -238,12 +252,12 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={uniclassMion} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Envelopamento da Home Uniclass - Home IU</Card.Title>
-                                                <Card.Text>
-                                                    Atualização do visual da tela de home do segmento Uniclass.
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 24</button>
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Envelopamento da Home Uniclass - Home IU</Card.Title>
+                                                    <Card.Text>Atualização do visual da tela de home do segmento Uniclass.</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues: 24</button>
                                             </Card.Body>
                                         </Card>
 
@@ -252,13 +266,12 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={undefined} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Bug - Nome do correntista "undefined"</Card.Title>
-                                                <Card.Text>
-                                                    Correção do bug causado pelo CMS Headless no fluxo de Wayout do tapete laranja.
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 42</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Bug - Nome do correntista "undefined"</Card.Title>
+                                                    <Card.Text>Correção do bug causado pelo CMS Headless no fluxo de Wayout do tapete laranja.</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues: 42</button>
                                             </Card.Body>
                                         </Card>
 
@@ -267,13 +280,12 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={acessibilidade} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Correção de inconsistências de acessibilidade na tela de Home-IP</Card.Title>
-                                                <Card.Text>
-                                                    Correções de acessibilidade no fluxo de personnalité do tapete laranja.
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues:</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Correção de inconsistências de acessibilidade na tela de Home-IP</Card.Title>
+                                                    <Card.Text>Correções de acessibilidade no fluxo de personnalité do tapete laranja.</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues:</button>
                                             </Card.Body>
                                         </Card>
 
@@ -282,15 +294,15 @@ export default function Iniciar() {
                                             border: '0.5px solid black'
                                         }}>
                                             <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={recaptcha} />
-                                            <Card.Body>
-                                                <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Remoção do Recaptcha no fluxo do Folhas</Card.Title>
-                                                <Card.Text>
-                                                    Remoção do recaptcha no fluxo de folhas do tapete laranja.
-                                                </Card.Text>
-                                                <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 86</button>
-                                                {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</Button> */}
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Remoção do Recaptcha no fluxo do Folhas</Card.Title>
+                                                    <Card.Text>Remoção do recaptcha no fluxo de folhas do tapete laranja.</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues: 86</button>
                                             </Card.Body>
                                         </Card>
+
                                     </div>
                                 </>
                                 : ""}
@@ -302,12 +314,12 @@ export default function Iniciar() {
                                         border: '0.5px solid black'
                                     }}>
                                         <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={crip} />
-                                        <Card.Body>
-                                            <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Integração do Caronte com a aplicação de Oferta</Card.Title>
-                                            <Card.Text>
-                                                Integração do front-end com o back-end utilizando a estrutura do Caronte
-                                            </Card.Text>
-                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 127</button>
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Integração do Caronte com a aplicação de Oferta</Card.Title>
+                                                <Card.Text>Integração do front-end com o back-end utilizando a estrutura do Caronte.</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues: 127</button>
                                         </Card.Body>
                                     </Card>
 
@@ -316,13 +328,12 @@ export default function Iniciar() {
                                         border: '0.5px solid black'
                                     }}>
                                         <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={ag} />
-                                        <Card.Body>
-                                            <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Busca de Agência da aplicação</Card.Title>
-                                            <Card.Text>
-                                                Integração do Google Maps para busca de agência do usuário logado.
-                                            </Card.Text>
-                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 74</button>
-                                            {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Busca de Agência da aplicação</Card.Title>
+                                                <Card.Text>Integração do Google Maps para busca de agência do usuário logado.</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues: 74</button>
                                         </Card.Body>
                                     </Card>
 
@@ -331,138 +342,158 @@ export default function Iniciar() {
                                         border: '0.5px solid black'
                                     }}>
                                         <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={charon} />
-                                        <Card.Body>
-                                            <Card.Title style={{ display: 'flex', flexDirection: 'column' }}>Integração do Caronte na peça de Autenticação</Card.Title>
-                                            <Card.Text>
-                                                Integração do Caronte no MFE Autenticação
-                                            </Card.Text>
-                                            <button className='promo' style={{ marginTop: 'auto' }}>BCPs entregues: 101</button>
-                                            {/* <button className='promo' style={{ marginTop: 'auto' }}>Impacto ao cliente</button> */}
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Integração do Caronte na peça de Autenticação</Card.Title>
+                                                <Card.Text>Integração do Caronte no MFE Autenticação.</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues: 101</button>
                                         </Card.Body>
                                     </Card>
+
                                 </div>
                             </> : ""}
 
                             {selectedButton === 2 ?
                                 <>
                                     <div className='contribuicoes'>
-                                                <div className='tarefas'>
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={reuniao} />
-                                                        <Card.Body>
-                                                            <Card.Title>Organização do Soluções em Foco</Card.Title>
-                                                            <Card.Text>
-                                                                Organização da reunião "Soluções em Foco", reunião focada em passagens de conhecimento e discussões de soluções que podem ser adotadas para nossa RT.
-
-                                                            </Card.Text>
-                                                            <Button variant="primary">Sextas-Feiras: 15h</Button>
-                                                        </Card.Body>
-                                                    </Card>
-
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={tapete} />
-                                                        <Card.Body>
-                                                            <Card.Title>Estabilização do Ambiente de Dev - Tapete Laranja</Card.Title>
-                                                            <Card.Text>
-                                                                Discovery e estabilização do ambiente de desenvolvimento do fluxo do tapete laranja. Saindo da margem de 100% de erros para um cenário de 70% das rotas funcionando.
-
-                                                            </Card.Text>
-                                                            <Button variant="primary">Discovery/Estabilização</Button>
-                                                        </Card.Body>
-                                                    </Card>
-
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={docs} />
-                                                        <Card.Body>
-                                                            <Card.Title>Alimentação do Sharepoint da RT com documentações explicativas</Card.Title>
-                                                            <Card.Text>
-                                                                Alimentação do Sharepoint da RT com documentações explicativas para Onboarding e auxilio aos colaboradores.
-
-                                                            </Card.Text>
-                                                            <Button variant="primary">Discovery/Estabilização</Button>
-                                                        </Card.Body>
-                                                    </Card>
-
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={aulas} />
-                                                        <Card.Body>
-                                                            <Card.Title>Aulas de Front-end</Card.Title>
-                                                            <Card.Text>
-                                                                Junto com outro colaborador, fomos responsáveis por puxar aulas sobre front-end para ensinar os outros colaboradores.
-                                                                Ensinando tecnologias que utilizamos em nossa RT.
-                                                            </Card.Text>
-                                                            <Button variant="primary">Aulas sobre Angular</Button>
-                                                        </Card.Body>
-                                                    </Card>
-
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={git} />
-                                                        <Card.Body>
-                                                            <Card.Title>Café com Git</Card.Title>
-                                                            <Card.Text>
-                                                                Passagem de conhecimento sobre Git para a Squad Aceleração.
-                                                                Apresentação com slides explicativos
-                                                            </Card.Text>
-                                                            <Button variant="primary">Passagem de Conhecimento</Button>
-                                                        </Card.Body>
-                                                    </Card>
-
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={releases} />
-                                                        <Card.Body>
-                                                            <Card.Title>Apresentação da R2</Card.Title>
-                                                            <Card.Text>
-                                                                Apresentação das principais entregas da Release 2 feitas pela Squad Aceleração.
-                                                            </Card.Text>
-                                                            <Button variant="primary">Apresentação</Button>
-                                                        </Card.Body>
-                                                    </Card>
-
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={releases} />
-                                                        <Card.Body>
-                                                            <Card.Title>Apresentação da R3</Card.Title>
-                                                            <Card.Text>
-                                                                Apresentação das principais entregas que seriam feitas na Release 3 pela Squad Aceleração.
-                                                            </Card.Text>
-                                                            <Button variant="primary">Apresentação</Button>
-                                                        </Card.Body>
-                                                    </Card>
-
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={akamai} />
-                                                        <Card.Body>
-                                                            <Card.Title>Passagem de conhecimento Cloudfront + Akamai</Card.Title>
-                                                            <Card.Text>
-                                                                Apresentação explicando a diferença entre Cloudfront e Akamai no "Soluções em Foco" para a RT toda.
-                                                            </Card.Text>
-                                                            <Button variant="primary">Apresentação</Button>
-                                                        </Card.Body>
-                                                    </Card>
-
-                                                    <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
-                                                        <Card.Img variant="top" src={releases} />
-                                                        <Card.Body>
-                                                            <Card.Title>Apresentação do PDCA - Ambiente Dev</Card.Title>
-                                                            <Card.Text>
-                                                                Apresentação feita no PDCA sobre o levantamento do ambiente de dev, levantando os principais progressos e resultados.
-                                                            </Card.Text>
-                                                            <Button variant="primary">Apresentação</Button>
-                                                        </Card.Body>
-                                                    </Card>
-                                                </div>
                                         <div className='tarefas'>
-                                            <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={reuniao} />
+                                                <Card.Body>
+                                                    <Card.Title>Organização do Soluções em Foco</Card.Title>
+                                                    <Card.Text>
+                                                        Organização da reunião "Soluções em Foco", reunião focada em passagens de conhecimento e discussões de soluções que podem ser adotadas para nossa RT.
+
+                                                    </Card.Text>
+                                                    <Button variant="primary">Sextas-Feiras: 15h</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={tapete} />
+                                                <Card.Body>
+                                                    <Card.Title>Estabilização do Ambiente de Dev - Tapete Laranja</Card.Title>
+                                                    <Card.Text>
+                                                        Discovery e estabilização do ambiente de desenvolvimento do fluxo do tapete laranja. Saindo da margem de 100% de erros para um cenário de 70% das rotas funcionando.
+
+                                                    </Card.Text>
+                                                    <Button variant="primary">Discovery/Estabilização</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={docs} />
+                                                <Card.Body>
+                                                    <Card.Title>Alimentação do Sharepoint da RT com documentações explicativas</Card.Title>
+                                                    <Card.Text>
+                                                        Alimentação do Sharepoint da RT com documentações explicativas para Onboarding e auxilio aos colaboradores.
+
+                                                    </Card.Text>
+                                                    <Button variant="primary">Discovery/Estabilização</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={aulas} />
+                                                <Card.Body>
+                                                    <Card.Title>Aulas de Front-end</Card.Title>
+                                                    <Card.Text>
+                                                        Junto com outro colaborador, fomos responsáveis por puxar aulas sobre front-end para ensinar os outros colaboradores.
+                                                        Ensinando tecnologias que utilizamos em nossa RT.
+                                                    </Card.Text>
+                                                    <Button variant="primary">Aulas sobre Angular</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={git} />
+                                                <Card.Body>
+                                                    <Card.Title>Café com Git</Card.Title>
+                                                    <Card.Text>
+                                                        Passagem de conhecimento sobre Git para a Squad Aceleração.
+                                                        Apresentação com slides explicativos
+                                                    </Card.Text>
+                                                    <Button variant="primary">Passagem de Conhecimento</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={releases} />
+                                                <Card.Body>
+                                                    <Card.Title>Apresentação da R2</Card.Title>
+                                                    <Card.Text>
+                                                        Apresentação das principais entregas da Release 2 feitas pela Squad Aceleração.
+                                                    </Card.Text>
+                                                    <Button variant="primary">Apresentação</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={releases} />
+                                                <Card.Body>
+                                                    <Card.Title>Apresentação da R3</Card.Title>
+                                                    <Card.Text>
+                                                        Apresentação das principais entregas que seriam feitas na Release 3 pela Squad Aceleração.
+                                                    </Card.Text>
+                                                    <Button variant="primary">Apresentação</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={akamai} />
+                                                <Card.Body>
+                                                    <Card.Title>Passagem de conhecimento Cloudfront + Akamai</Card.Title>
+                                                    <Card.Text>
+                                                        Apresentação explicando a diferença entre Cloudfront e Akamai no "Soluções em Foco" para a RT toda.
+                                                    </Card.Text>
+                                                    <Button variant="primary">Apresentação</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={releases} />
+                                                <Card.Body>
+                                                    <Card.Title>Apresentação do PDCA - Ambiente Dev</Card.Title>
+                                                    <Card.Text>
+                                                        Apresentação feita no PDCA sobre o levantamento do ambiente de dev, levantando os principais progressos e resultados.
+                                                    </Card.Text>
+                                                    <Button variant="primary">Apresentação</Button>
+                                                </Card.Body>
+                                            </Card>
+                                        </div>
+                                        <div className='tarefas'>
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
                                                 <Card.Img variant="top" src={calculo} />
                                                 <Card.Body>
                                                     <Card.Title>Desenvolvimento do "Calcula Interjornada"</Card.Title>
@@ -475,8 +506,10 @@ export default function Iniciar() {
                                                 </Card.Body>
                                             </Card>
 
-                                            <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
                                                 <Card.Img variant="top" src={aws} />
                                                 <Card.Body>
                                                     <Card.Title>Passagem de conhecimento AWS</Card.Title>
@@ -487,8 +520,10 @@ export default function Iniciar() {
                                                 </Card.Body>
                                             </Card>
 
-                                            <Card style={{ width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
-                                        border: '0.5px solid black' }}>
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
                                                 <Card.Img variant="top" src={git} />
                                                 <Card.Body>
                                                     <Card.Title>Passagem de conhecimento Git</Card.Title>
@@ -502,9 +537,9 @@ export default function Iniciar() {
                                     </div>
                                 </> : ""}
 
-                                {selectedButton === 3 ? <>
+                            {selectedButton === 3 ? <>
                                 <MyLineChart />
-                                </> : ""}
+                            </> : ""}
                         </div>
 
                     </div>
