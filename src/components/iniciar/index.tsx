@@ -30,8 +30,13 @@ import git from '../../assets/git.webp'
 import releases from '../../assets/releases.jpg'
 import reuniao from '../../assets/reuniao.jpg'
 import tapete from '../../assets/tapete.jpg'
-import { Button, ButtonGroup, Card, Table } from 'react-bootstrap';
+import tapeteLaranja from '../../assets/tapete-laranja.png'
+import data from '../../assets/data.jpg'
+import dog from '../../assets/dog.jpg'
+import pac from '../../assets/pac.jpg'
+import { Button, ButtonGroup, Card } from 'react-bootstrap';
 import MyLineChart from '../rechart';
+import MyChart from '../rechart';
 
 export default function Iniciar() {
     const [promocao, setPromocao] = useState<string>('JR');
@@ -112,12 +117,26 @@ export default function Iniciar() {
                                     className={selectedButton === 2 ? 'action-selected' : 'action'}
                                     onClick={() => handleClick(2)}
                                 >
-                                    Fora da Squad/RT
+                                    Squad One Itaú Não Logado
                                 </Button>
                                 <Button
                                     variant={'secondary'}
                                     className={selectedButton === 3 ? 'action-selected' : 'action'}
                                     onClick={() => handleClick(3)}
+                                >
+                                    Squad Iscas
+                                </Button>
+                                <Button
+                                    variant={'secondary'}
+                                    className={selectedButton === 4 ? 'action-selected' : 'action'}
+                                    onClick={() => handleClick(4)}
+                                >
+                                    Fora da Squad/RT
+                                </Button>
+                                <Button
+                                    variant={'secondary'}
+                                    className={selectedButton === 5 ? 'action-selected' : 'action'}
+                                    onClick={() => handleClick(5)}
                                 >
                                     Entregas de BCPs
                                 </Button>
@@ -303,6 +322,20 @@ export default function Iniciar() {
                                             </Card.Body>
                                         </Card>
 
+                                        <Card style={{
+                                            width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                            border: '0.5px solid black'
+                                        }}>
+                                            <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={tapeteLaranja} />
+                                            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                                <div>
+                                                    <Card.Title>Integração com o Caronte e migração para a v2 do Recepção</Card.Title>
+                                                    <Card.Text>Atualização do início da jornada do tapete laranja para a estrutura do caronte e a v2 do bff-recepção</Card.Text>
+                                                </div>
+                                                <button className='promo'>BCPs entregues</button>
+                                            </Card.Body>
+                                        </Card>
+
                                     </div>
                                 </>
                                 : ""}
@@ -351,10 +384,80 @@ export default function Iniciar() {
                                         </Card.Body>
                                     </Card>
 
+                                    <Card style={{
+                                        width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                        border: '0.5px solid black'
+                                    }}>
+                                        <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={pac} />
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Correção da Estrutura Visual da PAC</Card.Title>
+                                                <Card.Text>Correção de Bugs visuais presentes na proposta de abertura de conta.</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues</button>
+                                        </Card.Body>
+                                    </Card>
+
                                 </div>
                             </> : ""}
 
-                            {selectedButton === 2 ?
+                            {selectedButton === 2 ? <>
+                                <div className='container_tabela'>
+                                    Pegar tarefas
+                                </div>
+                            </> : ""}
+
+                            {selectedButton === 3 ? <>
+                                <p style={{ textAlign: 'center' }}>   
+                                    Discovery dos Bugs de produção utilizando o Datadog
+                                </p>
+                                <div className='container_tabela'>
+                                    <Card style={{
+                                        width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                        border: '0.5px solid black'
+                                    }}>
+                                        <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={data} />
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Discovery: Bug "undefined" em atualização cadastral</Card.Title>
+                                                <Card.Text>Utilizando o Datadog, foi feito um estudo no fluxo de Iscas e descoberto o bug que aparece em produção onde "undefined" aparece no lugar do bairro.</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues</button>
+                                        </Card.Body>
+                                    </Card>
+
+                                    <Card style={{
+                                        width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                        border: '0.5px solid black'
+                                    }}>
+                                        <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={dog} />
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Discovery: Bug do "meu endereço não tem número"</Card.Title>
+                                                <Card.Text>Utilizando o Datadog, foi feito um estudo no fluxo de Iscas e descoberto o bug que aparece um "erro" quando o usuário marca e desmarca o checkbox.</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues</button>
+                                        </Card.Body>
+                                    </Card>
+
+                                    <Card style={{
+                                        width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                        border: '0.5px solid black'
+                                    }}>
+                                        <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={crip} />
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Discovery: Bug relacionado a instabilidade do Caronte</Card.Title>
+                                                <Card.Text>Utilizando o datadog, foi estudado o cenário onde tinhamos erro na requisição do caronte e houve um estudo para propor sua solução</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues</button>
+                                        </Card.Body>
+                                    </Card>
+
+                                </div>
+                            </> : ""}
+
+                            {selectedButton === 4 ?
                                 <>
                                     <div className='contribuicoes'>
                                         <div className='tarefas'>
@@ -368,6 +471,20 @@ export default function Iniciar() {
                                                     <Card.Text>
                                                         Organização da reunião "Soluções em Foco", reunião focada em passagens de conhecimento e discussões de soluções que podem ser adotadas para nossa RT.
 
+                                                    </Card.Text>
+                                                    <Button variant="primary">Sextas-Feiras: 15h</Button>
+                                                </Card.Body>
+                                            </Card>
+
+                                            <Card style={{
+                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                border: '0.5px solid black'
+                                            }}>
+                                                <Card.Img variant="top" src={reuniao} />
+                                                <Card.Body>
+                                                    <Card.Title>Participação no Grupo do Clima</Card.Title>
+                                                    <Card.Text>
+                                                        Para organização de Happy Hours, festas de integração e melhor convivência dos membros da RT, o grupo do clima visa melhorar o ambiente de trabalho da comunidade.
                                                     </Card.Text>
                                                     <Button variant="primary">Sextas-Feiras: 15h</Button>
                                                 </Card.Body>
@@ -537,8 +654,8 @@ export default function Iniciar() {
                                     </div>
                                 </> : ""}
 
-                            {selectedButton === 3 ? <>
-                                <MyLineChart />
+                            {selectedButton === 5 ? <>
+                                <MyChart />
                             </> : ""}
                         </div>
 
