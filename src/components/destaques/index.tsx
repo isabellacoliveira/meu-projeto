@@ -3,8 +3,7 @@ import Principal from "../principal";
 function Destaques() {
     return (
         <>
-            <Principal />
-            <div className="card-group">
+            {/* <div className="card-group">
                 <div className="card">
                     <img className="card-img-top" src="..." alt="Card image cap" />
                         <div className="card-body">
@@ -65,7 +64,7 @@ function Destaques() {
                             <small className="text-muted">Last updated 3 mins ago</small>
                         </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }

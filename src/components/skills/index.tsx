@@ -19,7 +19,6 @@ import Spring from '../../assets/spring.png'
 const Skills = () => {
     return (
         <div className="app">
-            <Principal />
             <div>
                 <p className="title">Tecnologias</p>
                 <div className='container_skills'>

@@ -38,7 +38,6 @@ export default function Iniciar() {
 
     return (
         <>
-            <Principal />
             <div>
                 <h4 className='titulo'>Minhas Contribuições</h4>
                 <div>

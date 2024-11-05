@@ -4,7 +4,6 @@ import './styles.css'
 function Valores() {
     return (
         <>
-            <Principal />
             <div className='container'>
                 <div className="card" style={{ width: '500px', background: '#ff6200' }}>
                     <div className="card-body">

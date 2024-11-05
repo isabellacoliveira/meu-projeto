@@ -14,7 +14,6 @@ function Trajetoria() {
 
     return (
         <>
-            <Principal />
             <div className="config">
                 <div className="card" style={{ width: '20rem', height: '200px' }}>
                     <div className="card-body">

@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './styles.css'
 import { Outlet, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/logo.png'
+import Principal from '../principal';
 
 function Inicio() {
     const navigate = useNavigate(); 
@@ -29,6 +30,7 @@ function Inicio() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Principal />
       <Outlet />
       </>
     );
