@@ -18,7 +18,7 @@ function Inicio() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link onClick={() => navigate('entregas')} className='botoes'>Entregas Técnias/Contribuições</Nav.Link>
+              <Nav.Link onClick={() => navigate('entregas')} className='botoes'>Entregas Técnicas/Contribuições</Nav.Link>
               <Nav.Link onClick={() => navigate('valores')} className='botoes'>Valores do Banco</Nav.Link>
               <Nav.Link onClick={() => navigate('skills')} className='botoes'>Skills</Nav.Link> 
               {/* <Nav.Link onClick={() => navigate('feedbacks')} className='botoes'>Feedbacks</Nav.Link> */}
