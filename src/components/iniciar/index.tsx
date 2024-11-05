@@ -31,28 +31,10 @@ import Principal from '../principal';
 
 export default function Iniciar() {
     const [selectedButton, setSelectedButton] = useState<number | null>(0);
-    const [isOpen, setIsOpen] = useState(false);
-    const [openned, setOpenned] = useState(false);
-    const [dentroDaRT, setDentroDaRT] = useState(false);
-    const [foraDaRT, setForaDaRT] = useState(false);
-
-    const toggleTable = () => {
-        setOpenned(!isOpen);
-    };
-
-    const openDentroDaRT = () => {
-        setDentroDaRT(!dentroDaRT);
-    };
-
-    const openForaDaRT = () => {
-        setForaDaRT(!foraDaRT);
-    };
 
     const handleClick = (index: number) => {
         setSelectedButton(index);
     };
-
-
 
     return (
         <>

@@ -4,6 +4,7 @@ import Iniciar from "./components/iniciar";
 import Valores from "./components/valores";
 import Trajetoria from "./components/trajetoria";
 import Skills from "./components/skills";
+import Destaques from "./components/destaques";
 
 function AppRoutes() {
     return (
@@ -12,12 +13,13 @@ function AppRoutes() {
                 <Routes>
                     <Route path="/" element={<Inicio />} >
                         <Route path="/entregas" element={<Iniciar />} />
+                        <Route path="/destaques" element={<Destaques />} />
                         <Route path="/valores" element={<Valores />} />
                         <Route path="/skills" element={<Skills />} />
                         {/* <Route path="/feedbacks" element={<Entregas />} /> */}
                         <Route path="/trajetoria" element={<Trajetoria />} />
                     </Route>
-                    <Route path="/*" element={<Inicio />} />
+                    <Route path="/*" element={<Destaques />} />
                 </Routes>
             </Router>
         </>
