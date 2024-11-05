@@ -15,7 +15,7 @@ function AppRoutes() {
                         {/* <Route path="/feedbacks" element={<Entregas />} /> */}
                         {/* <Route path="/trajetoria" element={<Entregas />} /> */}
                     </Route>
-                    <Route path="*" element={<Inicio />} />
+                    <Route path="/*" element={<Inicio />} />
                 </Routes>
             </Router>
         </>
