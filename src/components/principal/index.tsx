@@ -24,8 +24,9 @@ function Principal() {
                     <p className='typing-text'>Isabella Oliveira</p>
                     <p className='cargo'>ANALISTA DE ENGENHARIA DE TI {promocao}</p>
                     <p className='cargo'>Contas e Tarifas - Abertura de Contas PF</p>
-                    <p>- API Owner</p>
-                    <p>- Desenvolvedora Front-End/Back-end</p>
+                    <p className='cargo'>Começou no Itaú em Maio/2024</p>
+                    {/* <p>- API Owner</p> */}
+
                     <div>
                         <p>Skills</p>
                         <div className='container_skills'>
@@ -39,7 +40,7 @@ function Principal() {
                             <img className="skills" src={Spring} alt="" />
                         </div>
                     </div>
-                    <button className='promo' onClick={promover}>Promoção</button>
+                    {/* <button className='promo' onClick={promover}>Promoção</button> */}
                 </div>
             </div>
         </>

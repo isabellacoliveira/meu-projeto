@@ -1,0 +1,47 @@
+.card {
+    width: 18rem;
+}
+
+.config{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.graduacao{
+    width: 50px;
+    height: 50px;
+}
+
+.graduacao{
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.loguinho{
+    width: 28px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+}
+
+.trajetorio{
+    font-size: 20px;
+}
+
+.jumbotron{
+    width: 400px!important;
+    height: 300px!important;
+}
+
+.card-subtitle{
+    padding-top: 20px;
+}

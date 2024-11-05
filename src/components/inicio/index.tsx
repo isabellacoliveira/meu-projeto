@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './styles.css'
 import { Outlet, useNavigate } from 'react-router-dom';
-import Iniciar from '../iniciar';
 import Logo from '../../assets/logo.png'
 
 function Inicio() {
@@ -21,9 +20,9 @@ function Inicio() {
             <Nav className="me-auto">
               <Nav.Link onClick={() => navigate('entregas')} className='botoes'>Entregas Técnias/Contribuições</Nav.Link>
               <Nav.Link onClick={() => navigate('valores')} className='botoes'>Valores do Banco</Nav.Link>
-              {/* <Nav.Link onClick={() => navigate('soft-skills')} className='botoes'>Soft Skills</Nav.Link>  */}
+              <Nav.Link onClick={() => navigate('skills')} className='botoes'>Skills</Nav.Link> 
               {/* <Nav.Link onClick={() => navigate('feedbacks')} className='botoes'>Feedbacks</Nav.Link> */}
-              {/* <Nav.Link onClick={() => navigate('trajetoria')} className='botoes'>Trajetória Profissional</Nav.Link> */}
+              <Nav.Link onClick={() => navigate('trajetoria')} className='botoes'>Profissional</Nav.Link>
               {/* <Nav.Link onClick={() => navigate('relacionamentos')} className='botoes'>Relacionamentos Pessoais</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>

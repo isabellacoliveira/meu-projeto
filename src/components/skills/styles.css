@@ -1,0 +1,53 @@
+.tables{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.skils{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.list-group{
+    margin: 20px 10px 10px 10px;
+}
+
+.personalidade{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.image{
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.imageSkills{
+    width: 700px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.tracos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
