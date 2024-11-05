@@ -1,12 +1,4 @@
 import me from '../../assets/me.jpg';
-import Angular from '../../assets/amazon-s3-simple-storage-service.svg'
-import Sla from '../../assets/angular.png'
-import Novamente from '../../assets/aws-api-gateway-logo-368082D845-seeklogo.com.png'
-import Cloudfront from '../../assets/aws-cloudfront-logo-D475098A98-seeklogo.com.png'
-import Gtw from '../../assets/images.jpg'
-import Image from '../../assets/images.png'
-import React from '../../assets/react.png'
-import Spring from '../../assets/spring.png'
 import { useState } from 'react';
 import loguinho from '../../assets/loguinho.png';
 import sre from '../../assets/SRE-removebg-preview.png';
@@ -31,17 +23,7 @@ function Principal() {
                     {/* <p>- API Owner</p> */}
 
                     <div>
-                        {/* <p>Skills</p>
-                        <div className='container_skills'>
-                            <img className="skills" src={Angular} alt="" />
-                            <img className="skills" src={Sla} alt="" />
-                            <img className="skills" src={Novamente} alt="" />
-                            <img className="skills" src={Cloudfront} alt="" />
-                            <img className="skills" src={Gtw} alt="" />
-                            <img className="skills" src={Image} alt="" />
-                            <img className="skills" src={React} alt="" />
-                            <img className="skills" src={Spring} alt="" />
-                        </div> */}
+
                     </div>
                     <div className='certificacoes'>
                         <div className='itens'>

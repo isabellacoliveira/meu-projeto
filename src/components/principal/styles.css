@@ -6,9 +6,9 @@
 .sre{
     width: 50px;
     height: 50px;
-    margin: 10px 50px 10px 10px;
+    margin: 10px 10px 10px 10px;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 20px;    
 }
 
 .sree{
@@ -27,4 +27,8 @@
 .itens{
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
 }
