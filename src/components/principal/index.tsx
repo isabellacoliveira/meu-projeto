@@ -8,6 +8,9 @@ import Image from '../../assets/images.png'
 import React from '../../assets/react.png'
 import Spring from '../../assets/spring.png'
 import { useState } from 'react';
+import loguinho from '../../assets/loguinho.png';
+import sre from '../../assets/SRE-removebg-preview.png';
+import './styles.css'
 
 function Principal() {
     const [promocao, setPromocao] = useState<string>('JR');
@@ -28,7 +31,7 @@ function Principal() {
                     {/* <p>- API Owner</p> */}
 
                     <div>
-                        <p>Skills</p>
+                        {/* <p>Skills</p>
                         <div className='container_skills'>
                             <img className="skills" src={Angular} alt="" />
                             <img className="skills" src={Sla} alt="" />
@@ -38,9 +41,19 @@ function Principal() {
                             <img className="skills" src={Image} alt="" />
                             <img className="skills" src={React} alt="" />
                             <img className="skills" src={Spring} alt="" />
-                        </div>
+                        </div> */}
                     </div>
-                    {/* <button className='promo' onClick={promover}>Promoção</button> */}
+                    <div className='certificacoes'>
+                        <div className='itens'>
+                            <img className="sre" src={loguinho} alt="" />
+                            <p>API Owner</p>
+                        </div>
+                        <div className='itens'>
+                            <img className="sree" src={sre} alt="" />
+                            <p>SRE Trained</p>
+                        </div>
+                        {/* <button className='promo' onClick={promover}>Promoção</button> */}
+                    </div>
                 </div>
             </div>
         </>

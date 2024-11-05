@@ -19,7 +19,7 @@ const MyChart = () => {
         height: 350
       },
       title: {
-        text: 'Gráfico de Vendas',
+        text: 'Hard Skills',
         align: 'center'
       },
       xaxis: {
