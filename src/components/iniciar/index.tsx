@@ -1,14 +1,5 @@
 import { useState } from 'react';
 import './styles.css'
-import me from '../../assets/me.jpg';
-import Angular from '../../assets/amazon-s3-simple-storage-service.svg'
-import Sla from '../../assets/angular.png'
-import Novamente from '../../assets/aws-api-gateway-logo-368082D845-seeklogo.com.png'
-import Cloudfront from '../../assets/aws-cloudfront-logo-D475098A98-seeklogo.com.png'
-import Gtw from '../../assets/images.jpg'
-import Image from '../../assets/images.png'
-import React from '../../assets/react.png'
-import Spring from '../../assets/spring.png'
 import cartaoProtegido from '../../assets/entregas/cartao.webp'
 import vitrine from '../../assets/entregas/parcelamento-carrossel-jpg.webp'
 import recaptcha from '../../assets/entregas/recaptcha.webp'
@@ -34,12 +25,11 @@ import tapeteLaranja from '../../assets/tapete-laranja.png'
 import data from '../../assets/data.jpg'
 import dog from '../../assets/dog.jpg'
 import pac from '../../assets/pac.jpg'
+import clima from '../../assets/clima_brasil.jpg'
 import { Button, ButtonGroup, Card } from 'react-bootstrap';
-import MyLineChart from '../rechart';
-import MyChart from '../rechart';
+import Principal from '../principal';
 
 export default function Iniciar() {
-    const [promocao, setPromocao] = useState<string>('JR');
     const [selectedButton, setSelectedButton] = useState<number | null>(0);
     const [isOpen, setIsOpen] = useState(false);
     const [openned, setOpenned] = useState(false);
@@ -62,36 +52,11 @@ export default function Iniciar() {
         setSelectedButton(index);
     };
 
-    function promover() {
-        setPromocao('PL')
-    }
+
 
     return (
         <>
-            <div className='fundo'>
-                <img src={me} alt="" className='me' />
-                <div>
-                    <p className='typing-text'>Isabella Oliveira</p>
-                    <p className='cargo'>ANALISTA DE ENGENHARIA DE TI {promocao}</p>
-                    <p className='cargo'>Contas e Tarifas - Abertura de Contas PF</p>
-                    <p>- API Owner</p>
-                    <p>- Desenvolvedora Front-End/Back-end</p>
-                    <div>
-                        <p>Skills</p>
-                        <div className='container_skills'>
-                            <img className="skills" src={Angular} alt="" />
-                            <img className="skills" src={Sla} alt="" />
-                            <img className="skills" src={Novamente} alt="" />
-                            <img className="skills" src={Cloudfront} alt="" />
-                            <img className="skills" src={Gtw} alt="" />
-                            <img className="skills" src={Image} alt="" />
-                            <img className="skills" src={React} alt="" />
-                            <img className="skills" src={Spring} alt="" />
-                        </div>
-                    </div>
-                    <button className='promo' onClick={promover}>Promoção</button>
-                </div>
-            </div>
+            <Principal />
             <div>
                 <h4 className='titulo'>Minhas Contribuições</h4>
                 <div>
@@ -133,13 +98,13 @@ export default function Iniciar() {
                                 >
                                     Fora da Squad/RT
                                 </Button>
-                                <Button
+                                {/* <Button
                                     variant={'secondary'}
                                     className={selectedButton === 5 ? 'action-selected' : 'action'}
                                     onClick={() => handleClick(5)}
                                 >
                                     Entregas de BCPs
-                                </Button>
+                                </Button> */}
                             </ButtonGroup>
                         </div>
 
@@ -408,7 +373,7 @@ export default function Iniciar() {
                             </> : ""}
 
                             {selectedButton === 3 ? <>
-                                <p style={{ textAlign: 'center' }}>   
+                                <p style={{ textAlign: 'center' }}>
                                     Discovery dos Bugs de produção utilizando o Datadog
                                 </p>
                                 <div className='container_tabela'>
@@ -462,11 +427,17 @@ export default function Iniciar() {
                                     <div className='contribuicoes'>
                                         <div className='tarefas'>
                                             <Card style={{
-                                                width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                                width: '18rem',
+                                                marginRight: '20px',
+                                                flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={reuniao} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={reuniao} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Organização do Soluções em Foco</Card.Title>
                                                     <Card.Text>
                                                         Organização da reunião "Soluções em Foco", reunião focada em passagens de conhecimento e discussões de soluções que podem ser adotadas para nossa RT.
@@ -480,8 +451,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={reuniao} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={clima} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Participação no Grupo do Clima</Card.Title>
                                                     <Card.Text>
                                                         Para organização de Happy Hours, festas de integração e melhor convivência dos membros da RT, o grupo do clima visa melhorar o ambiente de trabalho da comunidade.
@@ -494,8 +469,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={tapete} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={tapete} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Estabilização do Ambiente de Dev - Tapete Laranja</Card.Title>
                                                     <Card.Text>
                                                         Discovery e estabilização do ambiente de desenvolvimento do fluxo do tapete laranja. Saindo da margem de 100% de erros para um cenário de 70% das rotas funcionando.
@@ -509,8 +488,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={docs} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={docs} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Alimentação do Sharepoint da RT com documentações explicativas</Card.Title>
                                                     <Card.Text>
                                                         Alimentação do Sharepoint da RT com documentações explicativas para Onboarding e auxilio aos colaboradores.
@@ -524,8 +507,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={aulas} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={aulas} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Aulas de Front-end</Card.Title>
                                                     <Card.Text>
                                                         Junto com outro colaborador, fomos responsáveis por puxar aulas sobre front-end para ensinar os outros colaboradores.
@@ -539,8 +526,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={git} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={git} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Café com Git</Card.Title>
                                                     <Card.Text>
                                                         Passagem de conhecimento sobre Git para a Squad Aceleração.
@@ -554,8 +545,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={releases} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={releases} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Apresentação da R2</Card.Title>
                                                     <Card.Text>
                                                         Apresentação das principais entregas da Release 2 feitas pela Squad Aceleração.
@@ -568,8 +563,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={releases} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={releases} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Apresentação da R3</Card.Title>
                                                     <Card.Text>
                                                         Apresentação das principais entregas que seriam feitas na Release 3 pela Squad Aceleração.
@@ -582,8 +581,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={akamai} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={akamai} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Passagem de conhecimento Cloudfront + Akamai</Card.Title>
                                                     <Card.Text>
                                                         Apresentação explicando a diferença entre Cloudfront e Akamai no "Soluções em Foco" para a RT toda.
@@ -596,8 +599,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={releases} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={releases} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Apresentação do PDCA - Ambiente Dev</Card.Title>
                                                     <Card.Text>
                                                         Apresentação feita no PDCA sobre o levantamento do ambiente de dev, levantando os principais progressos e resultados.
@@ -605,14 +612,17 @@ export default function Iniciar() {
                                                     <Button variant="primary">Apresentação</Button>
                                                 </Card.Body>
                                             </Card>
-                                        </div>
-                                        <div className='tarefas'>
+
                                             <Card style={{
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={calculo} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={calculo} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Desenvolvimento do "Calcula Interjornada"</Card.Title>
                                                     <Card.Text>
                                                         Desenvolvimento do aplicativo "Calcula Interjornada" que fornece funcionalidades para que os Itubers consigam fazer a gestão de suas horas do banco de horas.
@@ -627,8 +637,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={aws} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={aws} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Passagem de conhecimento AWS</Card.Title>
                                                     <Card.Text>
                                                         Passagem de conhecimento sobre AWS para colaboradores de outras RTs.
@@ -641,8 +655,12 @@ export default function Iniciar() {
                                                 width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                                 border: '0.5px solid black'
                                             }}>
-                                                <Card.Img variant="top" src={git} />
-                                                <Card.Body>
+                                                <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={git} />
+                                                <Card.Body style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }}>
                                                     <Card.Title>Passagem de conhecimento Git</Card.Title>
                                                     <Card.Text>
                                                         Passagem de conhecimento sobre Git para um cientista de dados de Shared Experience PJ.
@@ -653,10 +671,10 @@ export default function Iniciar() {
                                         </div>
                                     </div>
                                 </> : ""}
-
+                            {/* 
                             {selectedButton === 5 ? <>
                                 <MyChart />
-                            </> : ""}
+                            </> : ""} */}
                         </div>
 
                     </div>
