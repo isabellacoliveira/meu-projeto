@@ -2,46 +2,69 @@
     width: 18rem;
 }
 
-.config{
+.config {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
     margin-top: 50px;
     padding-bottom: 20px;
 }
 
-.graduacao{
+h3 {
+    color: #3b3b3b;
+    padding-left: 20px;
+}
+
+.graduacao {
     width: 50px;
     height: 50px;
 }
 
-.graduacao{
+.graduacao {
     width: 30px;
     height: 40px;
     margin-right: 10px;
 }
 
-.loguinho{
+.loguinho {
     width: 28px;
     height: 30px;
     margin-right: 10px;
 }
 
-.infos{
+.infos {
     display: flex;
     flex-direction: row;
 }
 
-.trajetorio{
+.trajetorio {
     font-size: 20px;
 }
 
-.jumbotron{
-    width: 400px!important;
-    height: 300px!important;
+.jumbotron {
+    width: 400px !important;
+    height: 300px !important;
 }
 
-.card-subtitle{
+.card-subtitle {
     padding-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 10px 10px 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.aaa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin: 0px 20px 0px 20px;
 }

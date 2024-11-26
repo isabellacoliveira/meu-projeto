@@ -26,8 +26,9 @@ import data from '../../assets/data.jpg'
 import dog from '../../assets/dog.jpg'
 import pac from '../../assets/pac.jpg'
 import clima from '../../assets/clima_brasil.jpg'
+import midia from '../../assets/midia.jpg'
+import family from '../../assets/family.jpg'
 import { Button, ButtonGroup, Card } from 'react-bootstrap';
-import Principal from '../principal';
 
 export default function Iniciar() {
     const [selectedButton, setSelectedButton] = useState<number | null>(0);
@@ -349,15 +350,38 @@ export default function Iniciar() {
 
                             {selectedButton === 2 ? <>
                                 <div className='container_tabela'>
-                                    Pegar tarefas
+                                <Card style={{
+                                        width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                        border: '0.5px solid black'
+                                    }}>
+                                        <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={midia} />
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Tageamento do Adjust na efetivação da conta</Card.Title>
+                                                <Card.Text>Tageamento no fluxo do One Itaú Não Logado.</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues</button>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
                             </> : ""}
 
                             {selectedButton === 3 ? <>
-                                <p style={{ textAlign: 'center' }}>
-                                    Discovery dos Bugs de produção utilizando o Datadog
-                                </p>
                                 <div className='container_tabela'>
+                                    <Card style={{
+                                        width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
+                                        border: '0.5px solid black'
+                                    }}>
+                                        <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={family} />
+                                        <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                                            <div>
+                                                <Card.Title>Teste: Family and Friends - Abertura de Conta (fluxo: Pix)</Card.Title>
+                                                <Card.Text>Ajudei nos testes de abertura de contas via pix para o fluxo de Iscas.</Card.Text>
+                                            </div>
+                                            <button className='promo'>BCPs entregues</button>
+                                        </Card.Body>
+                                    </Card>
+
                                     <Card style={{
                                         width: '18rem', marginRight: '20px', flexBasis: 'calc(100% / 5)',
                                         border: '0.5px solid black'
@@ -405,7 +429,7 @@ export default function Iniciar() {
 
                             {selectedButton === 4 ?
                                 <>
-                                    <div className='contribuicoes'>
+                                    <div className='container_tabela'>
                                         <div className='tarefas'>
                                             <Card style={{
                                                 width: '18rem',
@@ -652,10 +676,6 @@ export default function Iniciar() {
                                         </div>
                                     </div>
                                 </> : ""}
-                            {/* 
-                            {selectedButton === 5 ? <>
-                                <MyChart />
-                            </> : ""} */}
                         </div>
 
                     </div>
