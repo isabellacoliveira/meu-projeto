@@ -20,11 +20,7 @@ function Principal() {
                     <p className='cargo'>ANALISTA DE ENGENHARIA DE TI {promocao}</p>
                     <p className='cargo'>Contas e Tarifas - Abertura de Contas PF</p>
                     <p className='cargo'>Começou no Itaú em Maio/2024</p>
-                    {/* <p>- API Owner</p> */}
 
-                    <div>
-
-                    </div>
                     <div className='certificacoes'>
                         <div className='itens'>
                             <img className="sre" src={loguinho} alt="" />

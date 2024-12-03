@@ -1,5 +1,3 @@
-import Principal from "../principal";
-import { Popover } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css'
 import chapeu from '../../assets/chapeu-removebg-preview.png';
@@ -10,12 +8,6 @@ import baixadanerd from '../../assets/baixadanerd.png';
 import devpr from '../../assets/devpr.png';
 
 function Trajetoria() {
-    const popover = (content: any) => (
-        <Popover id="popover-basic">
-            <Popover.Body>{content}</Popover.Body>
-        </Popover>
-    );
-
     return (
         <>
             <div className="config">

@@ -1,12 +1,6 @@
-import Principal from "../principal";
 import './styles.css'
 import caracteristicas from '../../assets/caracteristicas.png'
 import tracos from '../../assets/tracos.png'
-// import maistracos from '../../assets/aaaa.png'
-// import skills from '../../assets/skilss.png'
-// import strong from '../../assets/strong.png'
-// import mais from '../../assets/mais.png'
-// import maisum from '../../assets/maisum.png'
 import Angular from '../../assets/amazon-s3-simple-storage-service.svg'
 import Sla from '../../assets/angular.png'
 import Novamente from '../../assets/aws-api-gateway-logo-368082D845-seeklogo.com.png'
@@ -44,7 +38,7 @@ const Skills = () => {
                                 <li className="list-group-item">Altamente empática</li>
                             </ul>
                             <ul className="list-group">
-                                <li className="list-group-item active">Pontos Fracos</li>
+                                <li className="list-group-item active">Pontos a melhorar</li>
                                 <li className="list-group-item">Busca por aprovação</li>
                                 <li className="list-group-item">Preocupado em agradar os outros</li>
                                 <li className="list-group-item">Necessidade de validação</li>
@@ -59,17 +53,7 @@ const Skills = () => {
                 <div>
                     <div className="tracos">
                         <img src={tracos} alt="" className="image" />
-                        {/* <img src={maistracos} alt="" className="image" />
-                    <img src={mais} alt="" className="image" /> */}
                     </div>
-                    <div>
-
-                    </div>
-                    {/* <div className="tracos">
-                    <img src={skills} alt="" className="imageSkills" />
-                    <img src={strong} alt="" className="imageSkills" />
-                    <img src={maisum} alt="" className="imageSkills" />
-                </div> */}
                 </div>
             </div>
         </div>
