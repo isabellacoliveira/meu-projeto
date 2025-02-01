@@ -1,167 +1,218 @@
-.me{
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    border: 5px solid #fff;
-    margin-right: 40px;
+.me {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #fff;
+  margin-right: 40px;
 }
 
 @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
   }
-  
-  .me {
-    animation: pulse 3s infinite;
+  50% {
+    transform: scale(1.1);
   }
-  
+  100% {
+    transform: scale(1);
+  }
+}
 
-.fundo{
-    background-color: #000D3C;
-    padding: 20px 20px 20px 20px;
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    justify-content: center;
-    height: 100%;
-    font-family: 'Courier New', Courier, monospace; 
+.me {
+  animation: pulse 3s infinite;
+}
+
+.fundo {
+  background-color: #000d3c;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: center;
+  height: 100%;
+  font-family: "Courier New", Courier, monospace;
 }
 
 @keyframes typing {
-    0% { width: 0; }
-    50% { width: 100%; }
-    100% { width: 0; }
+  0% {
+    width: 0;
   }
-  
-  @keyframes blink {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: black; }
-  }
-  
-  .typing-text {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 30px;
-    border-right: 2px solid black; /* Cursor effect */
-    animation: typing 4s steps(40, end) infinite, blink 0.75s step-end infinite;
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for better effect */
-  }
-
-  .cargo{
-    background-color: #fff;
-    border-radius: 8px;
-    text-align: center;
-    color: black;
-    padding: 8px 8px 8px 8px;
-  }
-
-  .skills{
-    width: 50px;
-    height: 50px;
-  }
-  
-  .container_skills{
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 20px;
-  }
-
-  .promo{
-    background-color: #FF6200;
-    padding: 10px 10px 10px 10px;
+  50% {
     width: 100%;
-    margin-top: 20px;
-    border-radius: 10px;
-    color: #fff;
   }
-  
-  .promo:hover{
-    transform: translateY(-5px);
+  100% {
+    width: 0;
   }
-
-  .arrow {
-    margin-left: 20px;
-    margin-top: 5px;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
 }
 
-  .up {
-      transform: rotate(-135deg); 
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
   }
-
-  .down {
-      transform: rotate(45deg); 
+  50% {
+    border-color: black;
   }
+}
 
-  .entregas{
-    font-size: 20px;
-    padding-right: 10px;
-    padding-left: 20px;
-  }
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 30px;
+  border-right: 2px solid black; /* Cursor effect */
+  animation: typing 4s steps(40, end) infinite, blink 0.75s step-end infinite;
+  font-family: "Courier New", Courier, monospace; /* Monospace font for better effect */
+}
 
-  .selected {
-    background-color: orange;
-    border-color: orange;
-    color: white;
-  }
+.cargo {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  color: black;
+  padding: 8px 8px 8px 8px;
+}
 
-  .contribuicoes{
+.skills {
+  width: 50px;
+  height: 50px;
+}
+
+.container_skills {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.promo {
+  background-color: #ff6200;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.promo:hover {
+  transform: translateY(-5px);
+}
+
+.arrow {
+  margin-left: 20px;
+  margin-top: 5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.up {
+  transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
+.entregas {
+  font-size: 20px;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+.selected {
+  background-color: orange;
+  border-color: orange;
+  color: white;
+}
+
+.contribuicoes {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 20px;
+  justify-content: center;
+}
+
+.tarefas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 20px;
+}
+
+.container_tabela {
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.table-responsive-sm {
+  margin: 20px 20px 20px 20px !important;
+}
+
+.titulo {
+  text-align: center;
+  padding: 30px 10px 10px 10px;
+}
+
+.aceleracao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.action-selected {
+  background-color: #000d3c !important;
+}
+
+@media (max-width: 500px) {
+  .fundo {
     display: flex;
     flex-direction: column;
-    margin: 20px 20px 20px 20px;
-    justify-content: center;
+    width: 100%;
+    align-items: center;
   }
 
-  .tarefas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
-    margin: 20px;
+  .me {
+    width: 220px;
+    height: 220px;
+    margin: 30px 10px 10px 10px;
   }
-  
 
-  .container_tabela{
-    margin: 10px 10px 10px 10px;
+  .typing-text {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .btn-group {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container_tabela {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    align-items: center;
+    justify-items: center;
     gap: 20px;
   }
-
-  .table-responsive-sm{
-    margin: 20px 20px 20px 20px!important;
-  }
-
-  .titulo{
-    text-align: center;
-    padding: 30px 10px 10px 10px;
-  }
-
-  .aceleracao{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .action-selected{
-    background-color: #000D3C!important;
-  }
-
   
+
+  .card{
+    width: 300px!important;
+    height: 530px!important;
+  }
+
+  .card-title{
+    font-size: 25px!important;
+  }
+}

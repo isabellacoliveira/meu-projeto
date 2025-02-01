@@ -14,5 +14,11 @@ export const naoLogadoData: CardData[] = [
       imageSrc: midia,
       entregue: true
     },
+    {
+      title: "Conta pagamento V2",
+      description: "Integração do MFE utilizando a estrutura do caronte para a nova experiência do Conta Pagamento V2",
+      imageSrc: midia,
+      entregue: true
+    },
   ];
   

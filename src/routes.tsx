@@ -4,22 +4,24 @@ import Iniciar from "./components/iniciar";
 import Trajetoria from "./components/trajetoria";
 import Skills from "./components/skills";
 import Destaques from "./components/destaques";
+import Rodape from "./components/rodape";
 
 function AppRoutes() {
     return (
-        <>
-            <Router>
-                <Routes>
-                    <Route path="/" element={<Inicio />} >
-                        <Route path="/entregas" element={<Iniciar />} />
-                        <Route path="/destaques" element={<Destaques />} />
-                        <Route path="/skills" element={<Skills />} />
-                        <Route path="/trajetoria" element={<Trajetoria />} />
-                    </Route>
-                    <Route path="/*" element={<Destaques />} />
-                </Routes>
-            </Router>
-        </>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Inicio />} >
+                    <Route index element={<Iniciar />} />
+                    <Route path="/entregas" element={<Iniciar />} />
+                    <Route path="/destaques" element={<Destaques />} />
+                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/trajetoria" element={<Trajetoria />} />
+                </Route>
+                
+                <Route path="/*" element={<Destaques />} />
+            </Routes>
+            <Rodape />
+        </Router>
     );
 }
 

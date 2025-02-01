@@ -1,15 +1,25 @@
 .custom-navbar {
-    background-color: #000D3C;
+  background-color: #000d3c;
 }
 
 .botoes {
-    background-color: #ffffff!important;
-    color: #000000!important;
-    margin: 3px 3px 3px 3px;
-    border-radius: 10px;
-    font-size: 14px;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  margin: 3px 3px 3px 3px;
+  border-radius: 10px;
+  font-size: 14px;
 }
 
-.botoes:hover{
-    transform: translateY(-5px);
+.botoes:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 500px) {
+  .botoes {
+    padding-left: 20px;
+  }
+
+  .nav-link{
+    padding-left: 20px!important;
+  }
 }
