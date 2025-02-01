@@ -20,5 +20,11 @@ export const naoLogadoData: CardData[] = [
       imageSrc: midia,
       entregue: true
     },
+    {
+      title: "Cartão com Pontos - Uniclass",
+      description: "Adição do cartão com pontos no fluxo de Uniclass do One Itaú",
+      imageSrc: midia,
+      entregue: true
+    },
   ];
   
