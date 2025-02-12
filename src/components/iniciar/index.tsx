@@ -11,6 +11,7 @@ import { foraDaRtData } from './data/fora-rt/fora-da-rt-data';
 import { ButtonData } from '../../interfaces/button-data';
 import { initusData } from './data/initus/initus-data';
 import CardTask from '../card-task';
+import { contasParaFilhosData } from './data/contas-para-filhos/contas-para-filhos-data';
 
 export default function Iniciar() {
     const [selectedButton, setSelectedButton] = useState<number | null>(0);
@@ -21,6 +22,7 @@ export default function Iniciar() {
     const [buttonData, setButtonData] = useState<ButtonData[]>();
     const [foraDaRT, setForaDaRT] = useState<CardData[]>();
     const [initus, setInitus] = useState<CardData[]>();
+    const [filhos, setFilhos] = useState<CardData[]>();
 
     const handleClick = (index: number) => {
         setSelectedButton(index);
@@ -34,6 +36,7 @@ export default function Iniciar() {
         setButtonData(buttonsData);
         setForaDaRT(foraDaRtData);
         setInitus(initusData);
+        setFilhos(contasParaFilhosData);
     }, []);
 
     return (
@@ -100,7 +103,15 @@ export default function Iniciar() {
                                 </div>
                             </> : ""}
 
-                            {selectedButton === 5 ?
+                            {selectedButton === 5 ? <>
+                                <div className='container_tabela'>
+                                    {filhos?.map((card, index) => (
+                                        <CardTask key={index} card={card} />
+                                    ))}
+                                </div>
+                            </> : ""}
+
+                            {selectedButton === 6 ?
                                 <>
                                     <div className='container_tabela'>
                                         <div className='tarefas'>

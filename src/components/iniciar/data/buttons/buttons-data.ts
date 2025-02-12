@@ -22,8 +22,12 @@ export const buttonsData: ButtonData[] = [
         buttonNumber: 4
     },
     {
-        buttonText: 'Fora da Squad/RT',
+        buttonText: 'Squad Contas para filhos',
         buttonNumber: 5
+    },
+    {
+        buttonText: 'Fora da Squad/RT',
+        buttonNumber: 6
     },
   ];
   
